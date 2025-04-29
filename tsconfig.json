@@ -4,7 +4,11 @@
         "module": "CommonJS",
         "strict": true,
         "esModuleInterop": true,
-        "outDir": "dist"
+        "outDir": "dist",
+        "baseUrl": "./src",
+        "paths": {
+            "@support/*": ["support/*"]
+        }
     },
     "include": [
         "src/**/*"
