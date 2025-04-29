@@ -4,10 +4,10 @@
     "elements": [
       {
         "description": "",
-        "id": "login;sucess-login",
+        "id": "login;success-login",
         "keyword": "Scenario",
         "line": 4,
-        "name": "Sucess Login",
+        "name": "Success Login",
         "steps": [
           {
             "arguments": [],
@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1378866215
+              "duration": 2288255329
             }
           },
           {
@@ -28,11 +28,11 @@
             "line": 6,
             "name": "A user enters the username \"standard_user\", the password \"secret_sauce\", and clicks on the login button",
             "match": {
-              "location": "src/tests/step-definitions/login.ts:14"
+              "location": "src/tests/step-definitions/login.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 114505067
+              "duration": 3120887098
             }
           },
           {
@@ -41,11 +41,11 @@
             "line": 7,
             "name": "the url will contains the inventory subdirectory",
             "match": {
-              "location": "src/tests/step-definitions/login.ts:20"
+              "location": "src/tests/step-definitions/login.ts:24"
             },
             "result": {
               "status": "passed",
-              "duration": 27560722
+              "duration": 87400924
             }
           }
         ],

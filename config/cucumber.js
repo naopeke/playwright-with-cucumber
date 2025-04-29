@@ -11,7 +11,7 @@ module.exports ={
             "html:reports/cucumber-report.html"
         ],
         formatOptions: {
-            colors: true,
+            colors: true, //added
             snippetInterface: "async-await" //added
         },
         require: [
