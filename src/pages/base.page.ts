@@ -17,8 +17,17 @@ export class BasePage {
         });
 
         const page = await browser.newPage();
-        
+
         return { browser, page }
     }
 
 }
+
+//base code
+// browser = await chromium.launch({
+//     headless: false,
+//     slowMo: 1000,
+//     devtools: true
+// });
+
+// page = await browser.newPage();

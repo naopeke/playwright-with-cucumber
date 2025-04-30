@@ -1,51 +1,56 @@
 [
   {
-    "description": "     Feature Login page will work depending on the user credentials.",
+    "description": "    As a standard user\n    A user can add products to the shopping cart\n    And a user can review his selections before checkout",
     "elements": [
       {
         "description": "",
-        "id": "login;success-login",
+        "id": "add-to-cart;add-a-product-to-cart",
         "keyword": "Scenario",
-        "line": 4,
-        "name": "Success Login",
+        "line": 6,
+        "name": "Add a product to cart",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
-            "name": "A web browser is at the saucelabs login page",
+            "line": 7,
+            "name": "A web browser is at the inventory page",
             "match": {
-              "location": "src/tests/step-definitions/login.ts:7"
+              "location": "src/tests/step-definitions/add_to_cart.ts:21"
             },
             "result": {
-              "status": "passed",
-              "duration": 2288255329
+              "status": "failed",
+              "duration": 881141,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'goto')\n    at World.<anonymous> (/home/naopeke/Bootcamp/playwright-with-cucumber/src/tests/step-definitions/add_to_cart.ts:22:16)"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
-            "name": "A user enters the username \"standard_user\", the password \"secret_sauce\", and clicks on the login button",
-            "match": {
-              "location": "src/tests/step-definitions/login.ts:18"
-            },
+            "line": 8,
+            "name": "A user clicks \"Add to cart\" button for the product \"Sauce Labs Backpack\"",
             "result": {
-              "status": "passed",
-              "duration": 3120887098
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 7,
-            "name": "the url will contains the inventory subdirectory",
-            "match": {
-              "location": "src/tests/step-definitions/login.ts:24"
-            },
+            "line": 9,
+            "name": "A cart badge should display \"1\"",
             "result": {
-              "status": "passed",
-              "duration": 87400924
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the \"Remove\" button should appear for the product \"Sauce Labs Backpack\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
             }
           }
         ],
@@ -53,11 +58,11 @@
         "type": "scenario"
       }
     ],
-    "id": "login",
+    "id": "add-to-cart",
     "line": 1,
     "keyword": "Feature",
-    "name": "Login",
+    "name": "Add to cart",
     "tags": [],
-    "uri": "src/tests/features/login.feature"
+    "uri": "src/tests/features/add_to_cart.feature"
   }
 ]
